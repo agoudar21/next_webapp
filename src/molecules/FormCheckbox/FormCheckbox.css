@@ -1,0 +1,20 @@
+/* FormCheckbox.css */
+.check-box{ 
+  margin: 3px 3px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  width: 2rem;
+  cursor: pointer;
+}
+.error{
+  margin-left: 25px ;
+  margin-left: 25px ;
+  color: rgb(231, 77, 88);
+  width: 90%;
+}
+
+.focused label {
+  font-weight: bold;
+}

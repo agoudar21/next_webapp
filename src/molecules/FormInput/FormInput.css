@@ -1,0 +1,60 @@
+.formInput {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 200px 0px 10px ;
+
+}
+input {
+  padding: 14px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  transition: border-color 0.3s;
+  width: 70%;
+  font-size: 1rem;
+}
+.input-container{
+  position: relative;
+}
+.message-input{
+  margin-left: 0px;
+  width: 60%;
+}
+.errorMessage{
+  margin:2px 0 0 15px;
+  margin-left: 15px;
+}
+.input-container.invalid input {
+  border-color: rgb(231, 77, 88);
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  background-color: white;
+  padding: 2px;
+  color: gray;
+  pointer-events: none;
+  transition: transform 0.25s;
+}
+
+.focused input:focus + .placeholder,
+.formInput.focused input:not(:placeholder-shown) + .placeholder {
+  top: 0.3rem;
+  font-size: 0.85rem;
+  padding: 1px 2px;
+  background-color: white;
+}
+
+.formInput.focused input:invalid {
+  border-color: rgb(231, 77, 88);
+}
+
+.formInput.focused input:invalid ~ .errorMessage {
+  display: block;
+  max-width: 385px;
+  color: rgb(231, 77, 88);
+}

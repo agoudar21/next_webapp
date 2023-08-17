@@ -1,0 +1,26 @@
+.formSelect {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+select {
+  font-size: 1.3rem;
+  padding: 9px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  color: rgb(124, 122, 122);
+  border: 1px solid gray;
+  transition: border-color 0.3s;
+  background-color: rgb(243, 243, 243);
+  cursor: pointer;
+  width: 60%;
+}
+
+
+.message{
+  margin-left: 10px ;
+  width: 60%;
+}
+
+
